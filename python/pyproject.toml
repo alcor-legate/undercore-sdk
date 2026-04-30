@@ -1,0 +1,26 @@
+[project]
+name = "luzonic-sdk"
+version = "1.0.0"
+description = "Official Python SDK for the Luzonic API — Undercore Publishing, Nexune Distribution"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["luzonic", "undercore", "nexune", "music", "publishing", "distribution", "cisac", "api", "sdk"]
+dependencies = ["httpx>=0.25"]
+
+[project.urls]
+Homepage = "https://developers.luzonic.app"
+Repository = "https://github.com/alcor-legate/undercore-sdk"
+Documentation = "https://developers.luzonic.app"
+Issues = "https://github.com/alcor-legate/undercore-sdk/issues"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["undercore*"]
+
+[tool.setuptools.package-data]
+undercore = ["py.typed"]

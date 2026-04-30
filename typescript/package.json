@@ -1,0 +1,43 @@
+{
+  "name": "@luzonic/sdk",
+  "version": "1.0.0",
+  "description": "Official TypeScript SDK for the Luzonic API — Undercore Publishing, Nexune Distribution",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "luzonic",
+    "undercore",
+    "nexune",
+    "music",
+    "publishing",
+    "distribution",
+    "cisac",
+    "api",
+    "sdk"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alcor-legate/undercore-sdk"
+  },
+  "homepage": "https://developers.luzonic.app",
+  "bugs": {
+    "url": "https://github.com/alcor-legate/undercore-sdk/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
